@@ -3,7 +3,7 @@
 @section('title', 'Generate Lorem Ipsum Text')
 
 @section('content')
-    <h1>Generate Lorem Ipsum Text</h1>
+    <h1>Generate Random Users</h1>
     <form method='POST' action='/users'>
 
         {{ csrf_field() }}

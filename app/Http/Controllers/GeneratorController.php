@@ -83,7 +83,7 @@ class GeneratorController extends Controller
      */
     public function update(Request $request)
     {
-      
+
     }
 
     /**

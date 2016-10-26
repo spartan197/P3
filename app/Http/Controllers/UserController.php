@@ -44,8 +44,10 @@ class UserController extends Controller
 
       $usr="";
       for ($i = 0; $i < $noofusers; $i++) {
-      $usr.= $faker->name . ', Email Address: ' . $faker->unique()->email . ', Contact No' . $faker->phoneNumber . '<br>';
+      #$usr.= $faker->name . ', Email Address: ' . $faker->unique()->email . ', Contact No' . $faker->phoneNumber. '-';
+      $usr.= $faker->name . "-----------------" . $faker->unique()->email . "-----------------" . $faker->phoneNumber;
 }
+
       return view('generator.show2')->with(['usr' => $usr]);
 }
 
