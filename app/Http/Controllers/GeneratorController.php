@@ -36,13 +36,19 @@ class GeneratorController extends Controller
      */
     public function store(Request $request)
     {
+
+        /* Validating user input */
         $this->validate($request, [
             'NoOfParagraphs' => 'required|min:1|max:99|numeric',
         ]);
+
+        /* Generating random text */
         $NoOfParagraphs = $request->input('NoOfParagraphs');
         $generator = new \Badcow\LoremIpsum\Generator();
         $txt = $generator->getParagraphs($NoOfParagraphs);
         $text = implode('<p>',$txt);
+
+        /* Passing the random text to the view(show1.blade.php) */
         return view('generator.show1')->with(['text' => $text]);
     }
 }

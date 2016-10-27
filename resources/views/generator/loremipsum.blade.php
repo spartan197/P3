@@ -4,6 +4,8 @@
 
 @section('content')
     <h1>Generate Lorem Ipsum Text</h1>
+
+    {{-- Form to accept user input --}}
     <form method='POST' action='/loremipsum'>
 
         {{ csrf_field() }}
@@ -13,6 +15,7 @@
         <br>
         <input type='submit' class="button" value='Generate Text'>
 
+        {{-- Throws an error if the input is anything else other than a number between 1-99 --}}
         @if(count($errors) > 0)
             <ul>
                 @foreach($errors->all() as $error)

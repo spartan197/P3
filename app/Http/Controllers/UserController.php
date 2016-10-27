@@ -15,12 +15,16 @@ class UserController extends Controller
 
     public function store(Request $request)
     {
+            /* Validating user input */
             $this->validate($request, [
                 'NoOfUsers' => 'required|min:1|max:99|numeric',
             ]);
+
+            /* Generating random text */
             $NoOfUsers = $request->input('NoOfUsers');
             $faker = \Faker\Factory::create();
 
+            /* Displaying data in a table */
             $usr="";
             $usr.="<center><table>";
             $usr.="<tr>";
@@ -32,6 +36,8 @@ class UserController extends Controller
                 $usr.= "<tr><td>" . $faker->name . "</td><td>" . $faker->unique()->email . "</td><td>" . $faker->phoneNumber. "</td></tr>";
             }
             $usr.="</table></center>";
+
+            /* Passing the random users to the view(show2.blade.php) */
             return view('generator.show2')->with(['usr' => $usr]);
     }
 }
