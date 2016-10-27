@@ -3,5 +3,5 @@
 @section('title', 'Generate Random Users')
 
 @section('content')
-    {{ $usr }}
+    {!! $usr !!}
 @endsection

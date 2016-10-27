@@ -9,7 +9,7 @@
         {{ csrf_field() }}
 
         <h2>No. of paragraphs:  &nbsp;&nbsp;
-        <input type='text' name='noofparagraphs' maxlength="2" value='{{ old("title") }}'></h2>
+        <input type='text' name='NoOfParagraphs' maxlength="2" value='{{ old("title") }}'></h2>
         <br>
         <input type='submit' class="button" value='Generate Text'>
 
