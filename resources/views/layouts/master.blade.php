@@ -23,6 +23,7 @@
        <ul>
            <li><a href='/loremipsum'>Generate Random Text</a></li>
            <li><a href='/users'>Generate Random Users</a></li>
+           <li><a href='/password'>Generate Random Password</a></li>
        </ul>
    </nav>
    <br>

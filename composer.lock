@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "86b4dcbc317f7a9decddb3dce4e13fd9",
-    "content-hash": "75ec9feea08702bfc0cfa2c4b54f4ffc",
+    "hash": "db86bbc9ba7e66027745ee088a234e34",
+    "content-hash": "404fd262d7bd064c3ded1ca998159304",
     "packages": [
         {
             "name": "badcow/lorem-ipsum",
@@ -203,6 +203,47 @@
                 "string"
             ],
             "time": "2015-11-06 14:35:42"
+        },
+        {
+            "name": "hackzilla/password-generator",
+            "version": "1.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/hackzilla/password-generator.git",
+                "reference": "a85b083e4116eb29f53c28b5bf3857283f9ead21"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/hackzilla/password-generator/zipball/a85b083e4116eb29f53c28b5bf3857283f9ead21",
+                "reference": "a85b083e4116eb29f53c28b5bf3857283f9ead21",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2"
+            },
+            "require-dev": {
+                "satooshi/php-coveralls": "dev-master|^1.0",
+                "sllh/php-cs-fixer-styleci-bridge": "^2.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Hackzilla\\PasswordGenerator\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Daniel Platt",
+                    "email": "github@ofdan.co.uk",
+                    "homepage": "http://www.hackzilla.org"
+                }
+            ],
+            "description": "Password Generator Library",
+            "time": "2016-07-24 15:43:52"
         },
         {
             "name": "jakub-onderka/php-console-color",
