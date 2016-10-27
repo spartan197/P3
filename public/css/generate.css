@@ -22,9 +22,7 @@ a:link {
     clear: both;
 }
 
-.cf {
-    *zoom: 1; /* For IE 6/7 only */
-}
+
 /* End clearfix */
 
 
@@ -85,7 +83,7 @@ nav{
 }
 
 table{
-  align:center;
+  align-self: center;
   border: 1px solid black;
 }
 

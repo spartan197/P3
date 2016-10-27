@@ -7,7 +7,7 @@
     <form method='POST' action='/password'>
 
         {{ csrf_field() }}
-        
+
         <input type='submit' class="button" value='Generate Password'>
 
         @if(count($errors) > 0)

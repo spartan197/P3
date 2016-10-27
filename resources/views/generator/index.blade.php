@@ -2,7 +2,7 @@
 
 
 @section('title')
-    Omar Khan's Lorem Ipsum and Random User Generator
+    Omar Khan's Random Generator
 @stop
 
 

@@ -2,8 +2,8 @@
 <html>
 <head>
     <title>
-        {{-- Yield the title if it exists, otherwise default to 'Omar Khan's lorem Ipsum and Random User Generator' --}}
-        @yield('title','Lorem Ipsum and Random User Generator')
+        {{-- Yield the title if it exists, otherwise default to 'Omar Random Generator' --}}
+        @yield('title','Omar Random Generator')
     </title>
 
     <meta charset='utf-8'>
@@ -16,7 +16,7 @@
 <body>
 
     <header>
-      <h1>Omar Khan's Lorem Ipsum and Random User Generator</h1>
+      <h1>OK Random Generator</h1>
     </header>
 
     <nav>
